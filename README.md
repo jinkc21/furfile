@@ -1,4 +1,4 @@
-# project-2-full-stack
+# project-2
 
 # 15 Project 2: Interactive Full-Stack Application
 
