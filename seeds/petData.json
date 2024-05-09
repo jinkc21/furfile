@@ -1,10 +1,7 @@
 [
     {
       "name": "Big Boi",
-      "breed": "Miniature Pinscher",
-      "birthdate": "04/19/2008",
-      "weight": "16lbs",
-      "gender": "Male",
+      "type": "Dog",
       "owner_id": 1
     }
 ]
