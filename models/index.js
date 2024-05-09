@@ -1,4 +1,4 @@
-const Pet = require('./Project');
+const Pet = require('./Pet');
 const User = require('./User');
 const Profile = require('./Profile');
 
