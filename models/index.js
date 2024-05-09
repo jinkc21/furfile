@@ -1,5 +1,5 @@
-const Pet = require('./Pet');
-const User = require('./User');
+const Pet = require('./Project');
+const User = require('./user');
 const Profile = require('./Profile');
 
 User.hasMany(Pet, {
