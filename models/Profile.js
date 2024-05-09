@@ -18,6 +18,21 @@ Profile.init(
         key: 'id',
       },
     },
+    breed: {
+      type: DataTypes.STRING,
+    },
+    birthdate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    weight: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     altered: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
