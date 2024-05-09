@@ -15,18 +15,7 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    breed: {
-      type: DataTypes.STRING,
-    },
-    birthdate: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    weight: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
-    gender: {
+    type: {
       type: DataTypes.STRING,
       allowNull: false,
     },
