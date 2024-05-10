@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    {{{body}}}  <script src="script.js"></script>
+  <header>
+    <h1>Pet Medical Records</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/pets">Pets</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+  <footer>
+    <p>&copy; 2024 Pet Medical Records</p>
+  </footer>
+  <script src="/js/main.js"></script>
 </body>
 </html>
