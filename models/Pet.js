@@ -15,16 +15,44 @@ Pet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    type: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     owner_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'User',
         key: 'id',
       },
+    },
+    type: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    breed: {
+      type: DataTypes.STRING,
+    },
+    birthdate: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    weight: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    gender: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    altered: {
+        type: DataTypes.BOOLEAN,
+        allowNull: false,
+    },
+    microchip: {        
+        type: DataTypes.STRING,
+    },
+    vaccinations: {        
+        type: DataTypes.STRING,
+    },
+    allergies: {        
+        type: DataTypes.STRING,
     },
   },
   {
