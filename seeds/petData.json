@@ -9,8 +9,86 @@
       "gender": "Male",
       "altered": true,
       "microchip": "0A127A0753",
-      "vaccinations": "[Rabies, Bordatella, Lepto]",
+      "vaccinations": "[Rabies, Bordatella, Lepto, Parvo]",
       "allergies": ""
+    },
+    {
+      "name": "Bandit",
+      "owner_id": 2,
+      "type": "Cat",
+      "breed": "",
+      "birthdate": "05/13/2023",
+      "weight": "5lbs",
+      "gender": "Male",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "All the important ones",
+      "allergies": ""
+    },
+    {
+      "name": "Ozzy",
+      "owner_id": 3,
+      "type": "Dog",
+      "breed": "Husky",
+      "birthdate": "10/22/2019",
+      "weight": "62lbs",
+      "gender": "Male",
+      "altered": false,
+      "microchip": "",
+      "vaccinations": "All the important ones",
+      "allergies": "Being alone"
+    },
+    {
+      "name": "Poseidon",
+      "owner_id": 4,
+      "type": "Dog",
+      "breed": "Pit Bull",
+      "birthdate": "01/01/2019",
+      "weight": "55lbs",
+      "gender": "Male",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "allergies": ""
+    },
+    {
+      "name": "Snow",
+      "owner_id": 4,
+      "type": "Dog",
+      "breed": "Shar Pei / Pit Bull",
+      "birthdate": "01/01/2020",
+      "weight": "45lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "allergies": "Chicken"
+    },
+    {
+      "name": "Molly",
+      "owner_id": 4,
+      "type": "Dog",
+      "breed": "Chihuahua / Terrier",
+      "birthdate": "01/01/2018",
+      "weight": "25lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "allergies": ""
+    },
+    {
+      "name": "Birdie",
+      "owner_id": 4,
+      "type": "Dog",
+      "breed": "Staffordshire Bull Terrier",
+      "birthdate": "01/01/2022",
+      "weight": "35lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "allergies": "Dairy"
     }
 ]
   
