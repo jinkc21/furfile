@@ -4,8 +4,8 @@ const { User } = require("../../models");
 // Route api/users
 router.post("/", async (req, res) => {
   try {
-    const userData = await User.create({
-      email: req.body.email,
+      const userData = await User.create({
+       email: req.body.email,
       password: req.body.password,
     });
 
@@ -19,6 +19,8 @@ router.post("/", async (req, res) => {
     res.status(400).json(err);
   }
 });
+
+
 router.post("/login", async (req, res) => {
   try {
     //Finds data from database in email body and if it doesnt matches will send 400 err
