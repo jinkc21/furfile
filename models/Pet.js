@@ -17,6 +17,7 @@ Pet.init(
     },
     owner_id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'User',
         key: 'id',
@@ -31,7 +32,6 @@ Pet.init(
     },
     birthdate: {
       type: DataTypes.DATE,
-      allowNull: false,
     },
     weight: {
       type: DataTypes.STRING,
@@ -43,7 +43,6 @@ Pet.init(
     },
     altered: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
     },
     microchip: {        
         type: DataTypes.STRING,
