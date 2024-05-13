@@ -3,6 +3,6 @@ const userRoutes = require('./userRoutes');
 const petsRoutes = require('./petsRoutes');
 
 router.use('/users', userRoutes);
-router.use('/projects', petsRoutes);
+router.use('/pets', petsRoutes);
 
 module.exports = router;
