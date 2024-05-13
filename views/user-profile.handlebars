@@ -5,6 +5,27 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
-    {{{body}}}  <script src="script.js"></script>
+    <div class="container">
+        <div class="profile-info">
+            <h2>{{ownerName}}</h2>
+            <p>Email: {{ownerEmail}}</p>
+        </div>
+
+        <h3>Pets</h3>
+
+        {{#each pets}}
+            <div class="pet-card">
+                <div class="pet-icon"></div> <!-- Placeholder for pet icon -->
+                <div class="pet-details">
+                    <p class="pet-name">{{name}}</p>
+                </div>
+                <a href="/pet/{{id}}"> <!-- Link to pet profile -->
+                    <span class="arrow-icon">➔</span> <!-- Arrow icon -->
+                </a>
+            </div>
+        {{/each}}
+    </div>
+
+     <script src="script.js"></script>
 </body>
 </html>
