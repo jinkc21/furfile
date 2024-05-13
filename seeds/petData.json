@@ -89,6 +89,71 @@
       "microchip": "",
       "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
       "allergies": "Dairy"
+    },
+    {
+      "name": "Hugo",
+      "owner_id": 5,
+      "type": "Dog",
+      "breed": "Shih Tzu",
+      "birthdate": "02/04/2018",
+      "weight": "12lbs",
+      "gender": "Male",
+      "altered": true,
+      "microchip": "yes",
+      "vaccinations": "All the needed ones",
+      "allergies": ""
+    },
+    {
+      "name": "Maya",
+      "owner_id": 5,
+      "type": "Dog",
+      "breed": "German Shepherd",
+      "birthdate": "04/19/2022",
+      "weight": "62lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "yes",
+      "vaccinations": "All the needed ones",
+      "allergies": ""
+    },
+    {
+      "name": "Kiki",
+      "owner_id": 6,
+      "type": "Cat",
+      "breed": "Domestic Shorthair",
+      "birthdate": "04/11/2020",
+      "weight": "11lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "Rabies",
+      "allergies": ""
+    },
+    {
+      "name": "Ace",
+      "owner_id": 7,
+      "type": "Dog",
+      "breed": "Siberian Husky",
+      "birthdate": "07/31/2017",
+      "weight": "65lbs",
+      "gender": "Male",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "Rabies",
+      "allergies": ""
+    },
+    {
+      "name": "Zoey",
+      "owner_id": 7,
+      "type": "Dog",
+      "breed": "Siberian Husky",
+      "birthdate": "12/15/2019",
+      "weight": "55lbs",
+      "gender": "Female",
+      "altered": true,
+      "microchip": "",
+      "vaccinations": "Rabies",
+      "allergies": ""
     }
 ]
   
