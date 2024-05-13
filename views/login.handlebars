@@ -18,7 +18,19 @@
     </nav>
   </header>
   <main>
-    {{{body}}}
+     <div class="container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="/signup">Sign up</a></p>
+    </div>
   </main>
   <footer>
     <p>&copy; 2024 Pet Medical Records</p>
