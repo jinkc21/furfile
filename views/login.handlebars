@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
   <link rel="stylesheet" href="/css/styles.css">
 </head>
+
 <body>
   <header>
     <h1>Pet Medical Records</h1>
@@ -18,23 +20,50 @@
     </nav>
   </header>
   <main>
-     <div class="container">
-        <h2>Login</h2>
-        <form class="login-form">
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <input type="submit" value="Login">
-        </form>
-        <p>Don't have an account? <a href="/signup">Sign up</a></p>
+    <div class="container">
+      <h2>Login</h2>
+      <form class="login-form">
+        <div>
+          <label for="email-login">Email:</label>
+          <input class="form-input" type="text" id="email-login" />
+        </div>
+        <div>
+          <label for="password-login">Password:</label>
+          <input class="form-input" type="password" id="password-login" />
+        </div>
+        <div>
+          <button class="login-btn" type="submit">Login</button>
+        </div>
+      </form>
     </div>
+    <div>
+      <h2>Signup</h2>
+
+      <form class="signup-form">
+        <div>
+          <label for="name-signup">Name:</label>
+          <input class="form-input" type="text" id="username-signup" />
+        </div>
+        <div>
+          <label for="email-signup">Email:</label>
+          <input class="form-input" type="text" id="email-signup" />
+        </div>
+        <div>
+          <label for="password-signup">Password:</label>
+          <input class="form-input" type="password" id="password-signup" />
+        </div>
+        <div>
+          <button class="signup-btn" type="submit">Signup</button>
+        </div>
+      </form>
+    </div>
+
+
   </main>
   <footer>
     <p>&copy; 2024 Pet Medical Records</p>
   </footer>
   <script src="/js/login.js"></script>
 </body>
+
 </html>
