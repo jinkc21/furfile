@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS petprofile_db;
-CREATE DATABASE petprofile_db;
+DROP DATABASE IF EXISTS furfile_db;
+CREATE DATABASE furfile_db;
 
