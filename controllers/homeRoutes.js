@@ -2,37 +2,40 @@ const router = require('express').Router();
 const { Pet, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-router.get('/', withAuth, async (req, res) => {
-  const user = req.session.user_id;
+router.get('/', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+  res.render('login');
+});
+
+router.get('/user-profile', withAuth, async (req, res) => {
   try {
-
-    const userData = await User.findByPk(req.params.id, {
-
+    const userData = await User.findByPk(req.params.user_id, {
+      attributes: { exclude: ['password'] },
       include: [{ model: Pet }],
     });
 
-
-    const users = userData.get({ plain: true });
-
+    const user = userData.get({ plain: true });
 
     res.render('user-profile', {
-      user,
-      logged_in: req.session.logged_in
+      ...user,
+      logged_in: true
     });
-
-
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get('/profile/:id', async (req, res) => {
+router.get('/pets/:id', async (req, res) => {
   try {
     const petData = await Pet.findByPk(req.params.id, {
       include: [
         {
           model: User,
-
+          attributes: ['name'],
         },
       ],
     });
@@ -46,24 +49,6 @@ router.get('/profile/:id', async (req, res) => {
   } catch (err) {
     res.status(500).json(err);
   }
-});
-
-
-
-
-
-
-
-
-
-router.get('/login', (req, res) => {
-  // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
-
-  res.render('login');
 });
 
 
