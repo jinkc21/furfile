@@ -1,0 +1,34 @@
+<script id="pet-table-partial" type="text/x-handlebars-template">
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Breed</th>
+        <th>Birthdate</th>
+        <th>Weight</th>
+        <th>Gender</th>
+        <th>Altered</th>
+        <th>Microchip</th>
+        <th>Vaccinations</th>
+        <th>Allergies</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each pets}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{type}}</td>
+          <td>{{breed}}</td>
+          <td>{{birthdate}}</td>
+          <td>{{weight}}</td>
+          <td>{{gender}}</td>
+          <td>{{#if altered}}Yes{{else}}No{{/if}}</td>
+          <td>{{microchip}}</td>
+          <td>{{vaccinations}}</td>
+          <td>{{allergies}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</script>
