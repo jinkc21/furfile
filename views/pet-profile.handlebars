@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>{{title}}</title>
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-    {{{body}}}  <script src="script.js"></script>
-</body>
-</html>
+<script id="pets-template" type="text/x-handlebars-template">
+    <h2>Your Furry Family!</h2>
+    {{> petTable pets=pets}}
+  </script>
