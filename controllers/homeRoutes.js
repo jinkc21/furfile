@@ -4,16 +4,17 @@ const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
   // If the user is already logged in, redirect the request to another route
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
-  }
-  res.render('login');
+  // if (!req.session.logged_in) {
+  //   res.redirect('/login');
+  //   return;
+  // }
+  res.render('homepage', {logged_in: req.session.logged_in});
 });
 
 router.get('/user-profile', withAuth, async (req, res) => {
   try {
-    const userData = await User.findByPk(req.params.user_id, {
+    console.log(req.session.user_id)
+    const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Pet }],
     });
@@ -51,5 +52,14 @@ router.get('/pets/:id', async (req, res) => {
   }
 });
 
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  if (req.session.logged_in) {
+    res.redirect('/user-profile');
+    return;
+  }
+
+  res.render('login');
+});
 
 module.exports = router;
