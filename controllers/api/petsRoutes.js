@@ -1,8 +1,12 @@
 const router = require('express').Router();
-
+//const { Pet } = require('../../models');
 // Route api/projects
 router.get('/', (req,res) => {
-res.send('petsroute')
+
+
+
+
+    res.send('petsroute')
 });
 
 
