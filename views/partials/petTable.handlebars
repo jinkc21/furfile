@@ -1,4 +1,4 @@
-<script id="pet-table-partial" type="text/x-handlebars-template">
+<div id="pet-table-partial" type="text/x-handlebars-template">
   <table>
     <thead>
       <tr>
@@ -15,12 +15,11 @@
       </tr>
     </thead>
     <tbody>
-      {{#each pets}}
-        <tr>
+         <tr>
           <td>{{name}}</td>
           <td>{{type}}</td>
           <td>{{breed}}</td>
-          <td>{{birthdate}}</td>
+          <td>{{format_date birthdate}}</td>
           <td>{{weight}}</td>
           <td>{{gender}}</td>
           <td>{{#if altered}}Yes{{else}}No{{/if}}</td>
@@ -28,7 +27,7 @@
           <td>{{vaccinations}}</td>
           <td>{{allergies}}</td>
         </tr>
-      {{/each}}
+
     </tbody>
   </table>
-</script>
+</div>
