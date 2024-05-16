@@ -1,0 +1,18 @@
+<script id="add-pet-form-partial" type="text/x-handlebars-template">
+  <h3>Add a Pet!</h3>
+  <form id="add-pet-form">
+    {{#each fields}}
+      <div>
+        <label for="pet-{{name}}">{{label}}:</label>
+        {{#if isCheckbox}}
+          <input type="checkbox" id="pet-{{name}}" name="{{name}}">
+        {{else if isDate}}
+          <input type="date" id="pet-{{name}}" name="{{name}}">
+        {{else}}
+          <input type="{{type}}" id="pet-{{name}}" name="{{name}}" {{#if required}}required{{/if}}>
+        {{/if}}
+      </div>
+    {{/each}}
+    <button type="submit">Add Pet</button>
+  </form>
+</script>
