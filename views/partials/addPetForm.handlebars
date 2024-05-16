@@ -1,18 +1,46 @@
 <script id="add-pet-form-partial" type="text/x-handlebars-template">
-  <h3>Add a Pet!</h3>
-  <form id="add-pet-form">
-    {{#each fields}}
-      <div>
-        <label for="pet-{{name}}">{{label}}:</label>
-        {{#if isCheckbox}}
-          <input type="checkbox" id="pet-{{name}}" name="{{name}}">
-        {{else if isDate}}
-          <input type="date" id="pet-{{name}}" name="{{name}}">
-        {{else}}
-          <input type="{{type}}" id="pet-{{name}}" name="{{name}}" {{#if required}}required{{/if}}>
-        {{/if}}
-      </div>
-    {{/each}}
-    <button type="submit">Add Pet</button>
-  </form>
+  <h3>Add a Pet</h3>
+<form id="add-pet-form">
+  <div>
+    <label for="pet-name">Name:</label>
+    <input type="text" id="pet-name" name="name" required>
+  </div>
+  <div>
+    <label for="pet-type">Type:</label>
+    <input type="text" id="pet-type" name="type" required>
+  </div>
+  <div>
+    <label for="pet-breed">Breed:</label>
+    <input type="text" id="pet-breed" name="breed">
+  </div>
+  <div>
+    <label for="pet-birthdate">Birthdate:</label>
+    <input type="date" id="pet-birthdate" name="birthdate">
+  </div>
+  <div>
+    <label for="pet-weight">Weight:</label>
+    <input type="text" id="pet-weight" name="weight" required>
+  </div>
+  <div>
+    <label for="pet-gender">Gender:</label>
+    <input type="text" id="pet-gender" name="gender" required>
+  </div>
+  <div>
+    <label for="pet-altered">Altered:</label>
+    <input type="checkbox" id="pet-altered" name="altered">
+  </div>
+  <div>
+    <label for="pet-microchip">Microchip:</label>
+    <input type="text" id="pet-microchip" name="microchip">
+  </div>
+  <div>
+    <label for="pet-vaccinations">Vaccinations:</label>
+    <input type="text" id="pet-vaccinations" name="vaccinations">
+  </div>
+  <div>
+    <label for="pet-allergies">Allergies:</label>
+    <input type="text" id="pet-allergies" name="allergies">
+  </div>
+  <button type="submit">Add Pet</button>
+</form>
 </script>
