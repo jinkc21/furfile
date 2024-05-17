@@ -11,6 +11,7 @@ router.post("/", withAuth, async (req, res) => {
     const newPet = await Pet.create({
       ...req.body,
       user_id: req.session.user_id,
+      owner_id: req.session.user_id,
     });
      console.log("New Pet Data: ", newPet)
     res.status(200).json(newPet)
