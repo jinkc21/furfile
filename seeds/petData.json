@@ -9,7 +9,7 @@
       "gender": "Male",
       "altered": true,
       "microchip": "0A127A0753",
-      "vaccinations": "[Rabies, Bordatella, Lepto, Parvo]",
+      "vaccinations": "Rabies, Bordatella, Lepto, Parvo",
       "allergies": ""
     },
     {
@@ -48,7 +48,7 @@
       "gender": "Male",
       "altered": true,
       "microchip": "",
-      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
       "allergies": ""
     },
     {
@@ -61,7 +61,7 @@
       "gender": "Female",
       "altered": true,
       "microchip": "",
-      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
       "allergies": "Chicken"
     },
     {
@@ -74,7 +74,7 @@
       "gender": "Female",
       "altered": true,
       "microchip": "",
-      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
       "allergies": ""
     },
     {
@@ -87,7 +87,7 @@
       "gender": "Female",
       "altered": true,
       "microchip": "",
-      "vaccinations": "[Rabies, DA2PP, Bordatella, Lepto]",
+      "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
       "allergies": "Dairy"
     },
     {
