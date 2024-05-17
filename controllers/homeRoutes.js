@@ -23,13 +23,13 @@ router.get('/user-profile', withAuth, async (req, res) => {
         owner_id: req.session.user_id
       }
     });
-    console.log('pet data :', petData)
+    // console.log('pet data :', petData)
     const user = userData.get({ plain: true });
     const pets = petData.map((pet) =>
       pet.get({ plain: true })
   );
     user.Pets = pets
-    console.log('profile data :', user, pets)
+    // console.log('profile data :', user, pets)
     res.render('user-profile', {
       ...user,
       ...pets,
@@ -52,7 +52,7 @@ router.get('/pets/:id', async (req, res) => {
     });
 
     const pet = petData.get({ plain: true });
- console.log(pet)
+//  console.log(pet)
     res.render('pet-profile', {
       ...pet,
       logged_in: req.session.logged_in
