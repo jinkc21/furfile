@@ -5,11 +5,11 @@
     <input type="text" id="pet-name" name="name" required>
   </div>
   <div>
-    <label for="pet-type">Type:</label>
-    <input type="radio" id="pet-type" name="type" value="cat" required>
-    <label for="pet-type">Cat</label>
-    <input type="radio" id="pet-type" name="type" value="dog" required>
-    <label for="pet-type">Dog</label>
+    <legend>Type:</legend>
+    <label for="pet-type-cat">
+    <input type="radio" id="pet-type-cat" name="type" value="Cat" />Cat</label>
+    <label for="pet-type-dog">
+    <input type="radio" id="pet-type-dog" name="type" value="Dog" checked/>Dog</label>
   </div>
   <div>
     <label for="pet-breed">Breed:</label>
@@ -21,11 +21,14 @@
   </div>
   <div>
     <label for="pet-weight">Weight:</label>
-    <input type="text" id="pet-weight" name="weight" required>
+    <input type="number" id="pet-weight" name="weight" maxlength="3" required>
   </div>
   <div>
-    <label for="pet-gender">Gender:</label>
-    <input type="text" id="pet-gender" name="gender" required>
+    <legend>Gender:</legend>
+    <label for="pet-gender-male">
+    <input type="radio" id="pet-gender-male" name="gender" value="Male" />Male</label>
+    <label for="pet-gender-female">
+    <input type="radio" id="pet-gender-female" name="gender" value="Female" checked />Female</label>
   </div>
   <div>
     <label for="pet-altered">Altered:</label>
