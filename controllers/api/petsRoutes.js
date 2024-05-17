@@ -1,46 +1,51 @@
 const router = require("express").Router();
 const { Pet } = require("../../models");
+const withAuth = require('../../utils/auth');
 
 // Route api/pets
 
 //If sign up new pets
-router.post("/", async (req, res) => {
+router.post("/", withAuth, async (req, res) => {
+  console.log("Incoming Pet Data: ", req.body)
   try {
-    const newUser = await Pet.create({
+    const newPet = await Pet.create({
       ...req.body,
       user_id: req.session.user_id,
+      owner_id: req.session.user_id,
     });
-    res.status(200).json(newUser)
+     console.log("New Pet Data: ", newPet)
+    res.status(200).json(newPet)
   } catch (err) {
     req.status(400).json(err);
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", withAuth, async (req, res) => {
     try {
-        const newUser = await Pet.update({
+        const newPet = await Pet.update({
          
         });
-        res.status(200).json(newUser)
+        res.status(200).json(newPet)
       } catch (err) {
         req.status(400).json(err);
       }
    
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", withAuth, async (req, res) => {
   try {
-    const userData = await Pet.destroy({
+    const petData = await Pet.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!userData) {
-      res.status(400).json({ message: "No user found with this id!" });
+    if (!petData) {
+      res.status(400).json({ message: "No pet found with this id!" });
+      return;
     }
-    res.status(200).json(userData);
+    res.status(200).json(petData);
   } catch (err) {
     res.status(400).json(err);
   }
