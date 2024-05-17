@@ -18,12 +18,21 @@ router.get('/user-profile', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       include: [{ model: Pet }],
     });
-
+    const petData = await Pet.findAll({
+      where: {
+        owner_id: req.session.user_id
+      }
+    });
+    console.log('pet data :', petData)
     const user = userData.get({ plain: true });
-
-    // console.log(user)
+    const pets = petData.map((pet) =>
+      pet.get({ plain: true })
+  );
+    user.Pets = pets
+    console.log('profile data :', user, pets)
     res.render('user-profile', {
       ...user,
+      ...pets,
       logged_in: true
     });
   } catch (err) {
