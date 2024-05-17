@@ -1,33 +1,51 @@
-<div id="pet-table-partial" type="text/x-handlebars-template">
-  <table>
-    <thead>
-      <tr>
+<div class="card" id="pet-table-partial" type="text/x-handlebars-template">
+  <table class="vert">
+    <thead >
+      <tr class = "tbord">
         <th>Name</th>
-        <th>Type</th>
-        <th>Breed</th>
-        <th>Birthdate</th>
-        <th>Weight</th>
-        <th>Gender</th>
-        <th>Altered</th>
-        <th>Microchip</th>
-        <th>Vaccinations</th>
-        <th>Allergies</th>
+        <td>{{name}}</td>
       </tr>
-    </thead>
-    <tbody>
-         <tr>
-          <td>{{name}}</td>
-          <td>{{type}}</td>
-          <td>{{breed}}</td>
-          <td>{{format_date birthdate}}</td>
-          <td>{{weight}}</td>
-          <td>{{gender}}</td>
-          <td>{{#if altered}}Yes{{else}}No{{/if}}</td>
-          <td>{{microchip}}</td>
-          <td>{{vaccinations}}</td>
-          <td>{{allergies}}</td>
-        </tr>
+      <tr>
+        <th>Type</th>
+        <td>{{type}}</td>
+      </tr>
+      <tr class = "tbord2">
+      <th>Breed</th>
+      <td>{{breed}}</td>
+      </tr>
+<tr >
+      <th>Birthdate</th>
+      <td>{{format_date birthdate}}</td>
+      </tr>
+<tr class = "tbord2">
+      <th>Weight</th>
+      <td>{{weight}}</td>
+</tr >
 
+<tr >
+      <th>Gender</th>
+      <td>{{gender}}</td>
+</tr>
+<tr class = "tbord2">
+      <th>Altered</th>
+      <td>{{#if altered}}Yes{{else}}No{{/if}}</td>
+</tr>
+<tr >
+      <th>Microchip</th>
+      <td>{{microchip}}</td>
+</tr>
+<tr class = "tbord2">
+      <th>Vaccinations</th>
+      <td>{{vaccinations}}</td>
+</tr>
+<tr >
+      <th>Allergies</th>
+      <td>{{allergies}}</td>
+</tr>
+
+      
+    </thead>
+    
     </tbody>
   </table>
 </div>
