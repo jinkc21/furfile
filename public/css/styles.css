@@ -1,0 +1,61 @@
+.petheader {
+    flex: 1 0 200px;
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 5px; 
+    border-color: green;
+    background-color: #0c99BA; 
+
+    
+
+}
+
+.header {
+    height: 50px;
+    text-align: center;
+background-color: #0c99BA;
+    margin-left: auto;
+ margin-right: auto;
+}
+.background {
+    background-color: #EEEEEE; 
+}
+
+
+.card {
+    flex: 1 0 100px;
+    padding: 30px;
+    text-align: center;
+    
+    border-width: 1px; 
+    justify-content: space-between;
+    
+
+}
+
+.table {
+    width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ border-style: solid;
+    border-color: green;
+text-align: center;
+}
+
+.tbord{
+    height: 50px;
+    width: 100%;
+    border-style: solid;
+    background-color: #0c99BA; 
+    font-size: 30px;
+    border-width: 100px; 
+}
+.tbord2{
+    
+    width: 100%;
+    border-style: solid;
+    background-color: #0c99BA; 
+  
+    border-width: 100px; 
+}
