@@ -15,3 +15,4 @@ const element = document.querySelector('#pet-carousel');
 if (element && element.bulmaCarousel) {
 	// bulmaCarousel instance is available as element.bulmaCarousel
 }
+
