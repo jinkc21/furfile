@@ -21,7 +21,7 @@
   </div>
   <div>
     <label for="pet-weight">Weight:</label>
-    <input type="number" id="pet-weight" name="weight" maxlength="3" required> lbs
+    <input type="number" id="pet-weight" name="weight" max="321" required> lbs
   </div>
   <div>
     <legend>Gender:</legend>
@@ -31,8 +31,11 @@
     <input type="radio" id="pet-gender-female" name="gender" value="Female" checked />Female</label>
   </div>
   <div>
-    <label for="pet-altered">Altered:</label>
-    <input type="checkbox" id="pet-altered" name="altered">
+    <legend>Altered:</legend>
+    <label for="pet-altered-yes">
+    <input type="radio" id="pet-altered-yes" name="altered" value="True" />Yes</label>
+    <label for="pet-altered-no">
+    <input type="radio" id="pet-altered-no" name="altered" value="False" checked/>No</label>
   </div>
   <div>
     <label for="pet-microchip">Microchip #:</label>
