@@ -1,28 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
 .petheader {
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-    margin-left: auto;
-    margin-right:auto;
-    border-style: solid;
-    border-width: 5px; 
-    border-color: #DCDFE2;
-    background-color: #70CFDB;
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    font-size: 25px;
-
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #EEEEEE;
+  background-color: #70CFDB;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
 }
 
 .header {
-    height: 50px;
-    text-align: center;
-    background-color: #70CFDB;
-    margin-left: auto;
-    margin-right: auto;
+  height: 50px;
+  text-align: center;
+  background-color: #70CFDB;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pet-card {
@@ -37,7 +36,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 150px;
-    
     text-align: center;
 }
 
@@ -62,104 +60,105 @@ h3 {
     text-align: center;
 }
 .table {
-    color: #676767;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: solid;
-    border-color: #ECEEF0;
-    border-width: 5px;
-    text-align: center;
+  color: #676767;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: #EEEEEE;
+  border-width: 5px;
+  text-align: center;
 }
 
-.tbord{
-    height: 50px;
-    width: 100%;
-    border-style: solid;
-    background-color: #70CFDB; 
-    font-size: 30px;
-    border-width: 5px;
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+.tbord {
+  height: 50px;
+  width: 100%;
+  border-style: solid;
+  background-color: #70CFDB;
+  font-size: 30px;
+  border-width: 5px;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-.tbord2{
-    
-    width: 100%;
-    border-style: solid;
-    background-color: #70CFDB; 
-  
-    border-width: 5px; 
+
+.tbord2 {
+  width: 100%;
+  border-style: solid;
+  background-color: #70CFDB;
+  border-width: 5px;
 }
+
 body {
-    background-color: #70CFDB;
-    background-image: url('https://i.postimg.cc/FKTVmQRk/tppaw-1.png'); 
-    background-repeat: repeat; 
-    background-size: 200px 200px; 
-    color: black;
-  }
-  
-  .nav-link {
-    color: #ffffff; 
-  }
-  
-  .card {
-    margin-top: 20px;
-  }
-  
-  .card-header {
-    background-color: #007bff; 
-    color: #ffffff; 
-  }
-  
-  .card-body {
-    background-color: #e9ecef; 
-  }
-  
-  .btn-primary {
-    background-color: #007bff; 
-    border-color: #007bff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3; 
-    border-color: #004085;
-  }
-  .form-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid #37312F;
-    border-radius: 15px;
-    background-color: #ECEEF0; 
+  background-color: #70CFDB;
+  background-image: url('https://i.postimg.cc/FKTVmQRk/tppaw-1.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  color: black;
 }
+
+.nav-link {
+  color: #ffffff;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.card-body {
+  background-color: #e9ecef;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #37312F;
+  border-radius: 15px;
+  background-color: #ECEEF0;
+}
+
 .notification {
-    background-color: #37312F;
-    color: #37312F; 
+  background-color: #37312F;
+  color: #37312F;
 }
-.navbar, .footer {
-    background-color: #DCDFE2; 
-    color: #ECEEF0; 
-  }
-  
+
+.navbar,
+.footer {
+  background-color: #DCDFE2;
+  color: #ECEEF0;
+}
+
 .button.is-custom {
-    background-color: #70CFDB;
-    border-color: #70CFDB;
-    color: #FFFFFF;
+  background-color: #70CFDB;
+  border-color: #70CFDB;
+  color: #FFFFFF;
 }
+
 .button.is-custom:hover {
-    background-color: #5bb5c7;
-    border-color: #5bb5c7;
+  background-color: #5bb5c7;
+  border-color: #5bb5c7;
 }
+
 .footer {
   color: black;
 }
-  .image-container {
-    object-fit: fill;
-    overflow: hidden;
-    height: 400px;
-    width: 400px;
-  }
+
 .add-pet-form {
     padding: 30px;
     border-style: solid;
@@ -169,11 +168,53 @@ body {
     justify-content: space-evenly;
     width: 80%;
     margin: auto;
-
 }
+
 hr.rounded {
   border-top: 2px solid #bbb;
   border-radius: 2px;
+}
+
+.image-container {
+  object-fit: fill;
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+}
+
+.addpethead {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.is-5 {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.pet-name {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;
+}
+
+.submitbutton {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 15px;  
+}
+
+.profile-info {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 30px;
 }
 
 input[type=text], select {
@@ -185,6 +226,7 @@ input[type=text], select {
   border-radius: 4px;
   box-sizing: border-box;
 }
+
 .center {
   display: block;
   margin-left: auto;
