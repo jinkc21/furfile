@@ -1,49 +1,67 @@
 <body>
-  <main>
-    <div class="container">
-      <h2>Login</h2>
-      <form class="login-form">
-        <div>
-          <label for="email-login">Email:</label>
-          <input class="form-input" type="text" id="email-login" />
+ <div class="container mt-6">
+        <div class="form-container">
+            <h2 class="title is-4 has-text-centered">Log in below to access your profile for your pet family!</h2>
+            <form class="login-form">
+                <div class="field">
+                    <label class="label" for="email-login">Email:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="email-login" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="password-login">Password:</label>
+                    <div class="control">
+                        <input class="input" type="password" id="password-login" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-custom login-btn" type="submit">Login</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div>
-          <label for="password-login">Password:</label>
-          <input class="form-input" type="password" id="password-login" />
+    </div>
+    <br>
+<div class="container mt-6">
+  <div class="notification is-info has-text-centered">
+    <p class="title is-4">Keep Your Pet Information Handy!</p>
+    <p>Sign up now to have all of the important information for your pet family in one convenient location, accessible at any time.</p>
+  </div>
+</div>
+        <br>
+    <div class="container mt-6">
+        <div class="form-container">
+            <h2 class="title is-4 has-text-centered">Our form is short and sweet!</h2>
+            <form class="signup-form">
+                <div class="field">
+                    <label class="label" for="name-signup">Name:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="name-signup" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="email-signup">Email:</label>
+                    <div class="control">
+                        <input class="input" type="text" id="email-signup" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="password-signup">Password:</label>
+                    <div class="control">
+                        <input class="input" type="password" id="password-signup" />
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button class="button is-custom signup-btn" type="submit">Sign Up Now!</button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div>
-          <button class="login-btn" type="submit">Login</button>
-        </div>
-      </form>
     </div>
     <br>
     <br>
-    <br>
-    <div class="container2">
-      <h2>Signup</h2>
-      <form class="signup-form">
-        <div>
-          <label for="name-signup">Name:</label>
-          <input class="form-input" type="text" id="name-signup" />
-        </div>
-        <div>
-          <label for="email-signup">Email:</label>
-          <input class="form-input" type="text" id="email-signup" />
-        </div>
-        <div>
-          <label for="password-signup">Password:</label>
-          <input class="form-input" type="password" id="password-signup" />
-        </div>
-        <div>
-          <button class="signup-btn" type="submit">Signup</button>
-        </div>
-      </form>
-    </div>
-
-
-  </main>
-  <footer>
-    <p>&copy; 2024 FurFile.</p>
-  </footer>
   <script src="/js/login.js"></script>
 </body>
