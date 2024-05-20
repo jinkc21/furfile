@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title >FurFile</title>
-  <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body class= "background is-light">
+<body>
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand" href="#"> 
@@ -19,28 +19,43 @@
       </div>
         <div class="navbar-menu">
       </div>
-        <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
+      <div class="navbar-menu"></div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
       <!-- Conditionally render login or logout links -->
-      {{#if logged_in}}
-      <a class="button is-light" href="/">Homepage</a>
-      <a class="button is-light" href="/user-profile">User Profile</a>
-      <button class="button is-light" id="logout">Logout</button>
-      {{else}}
-      <a class="button is-light" href="/">Homepage</a> 
-      <a class="button is-light" href="/user-profile">User Profile</a> 
-      <a class="button is-light" href="/login">Login</a>
-      {{/if}}
+          {{#if logged_in}}
+          <a class="button is-light" href="/">Home</a>
+          <a class="button is-light" href="/user-profile">User Profile</a>
+          <button class="button is-light" id="logout">Logout</button>
+          {{else}}
+          <a class="button is-light" href="/">Home</a> 
+          <a class="button is-light" href="/user-profile">User Profile</a> 
+          <a class="button is-light" href="/login">Login</a>
+          {{/if}}
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
+  <div class="section">
+    <div class="container is-custom has-text-centered">
+      <figure class="image is-inline-block">
+        <img src="https://i.postimg.cc/V67CPHr4/furfilecrop.png" alt="FFbanner"  style="border: 2px solid #ccc; background-color: #70CFDB; border-radius: 15px;">
+      </figure>
+    </div>
+  </div>
   <main>
     {{{body}}}
   </main>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
-  
   {{/if}}
+  <footer class="footer has-text-centered mt-6">
+        <p>&copy; 2024 FurFile.</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
