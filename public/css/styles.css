@@ -44,7 +44,7 @@
 .pet-card-holder {
     padding: 30px;
     border-style: solid;
-    border width: 2px;
+    border-width: 2px;
     background-color: #ECEEF0;
     border-radius: 15px;
     justify-content: start;
@@ -163,7 +163,7 @@ body {
 .add-pet-form {
     padding: 30px;
     border-style: solid;
-    border width: 2px;
+    border-width: 2px;
     background-color: #ECEEF0;
     border-radius: 15px;
     justify-content: space-evenly;
@@ -184,4 +184,10 @@ input[type=text], select {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
