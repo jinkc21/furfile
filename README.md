@@ -1,5 +1,8 @@
 # FurFile
-
+[![Node.js Badge](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en) 
+[![Mysql Badge](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)](https://nodejs.org/en) 
+[![Express Badge](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)](https://expressjs.com/)
+[![Heroku Badge](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://www.heroku.com/)  
 ## Description
 
 Anyone that has pets knows that they are part of the family. So having their medical records should be important to us. Furfile allows users to track and update their pet’s information online. Just sign in to FurFile and input the information. Each FurFile profile displays the following pet information: 
@@ -33,12 +36,21 @@ Visit: https://immense-taiga-25334-d6b01512dabc.herokuapp.com/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+To use this application click on the given heroku link. It will then take you to the homepage. Click on signup button on the navigation bar. Then it will ask the name, email and password. After sign up you can fill the form and click on add pet, it will add your pet and will show your pets information. You can follow the screenshots below.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+1. The main homepage.
 
+![Homepage image of the application.](./assets/screenshots/screenshot-1.png)
 
-![alt text](assets/images/screenshot.png)
+2. Signup page.
+
+![Signup page image of the application.](./assets/screenshots/screenshot-2.png)
+
+3. Add a pet page.
+![Pets Information image of the application.](./assets/screenshots/screenshot-3.png)
+
+4. Pet details page.
+![Pets details image of the application.](./assets/screenshots/screenshot-4.png)
 
 
 ## Credits

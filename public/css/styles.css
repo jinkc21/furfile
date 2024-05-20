@@ -14,7 +14,6 @@
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-
 }
 
 .header {
@@ -25,17 +24,41 @@
   margin-right: auto;
 }
 
-.card {
-  flex: 1 0 100px;
-  padding: 30px;
-  text-align: center;
-
-  border-width: 1px;
-  justify-content: space-between;
-
-
+.pet-card {
+    padding: 30px;
+    border-style: double;
+    border-width: 1px; 
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #DCDFE2;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 150px;
+    text-align: center;
 }
 
+.pet-card-holder {
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #ECEEF0;
+    border-radius: 15px;
+    justify-content: start;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}   
+
+h3 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 25px;
+    text-align: center;
+}
 .table {
   color: #676767;
   width: 50%;
@@ -60,11 +83,9 @@
 }
 
 .tbord2 {
-
   width: 100%;
   border-style: solid;
   background-color: #70CFDB;
-
   border-width: 5px;
 }
 
@@ -138,20 +159,27 @@ body {
   color: black;
 }
 
+.add-pet-form {
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #ECEEF0;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+
+hr.rounded {
+  border-top: 2px solid #bbb;
+  border-radius: 2px;
+}
+
 .image-container {
   object-fit: fill;
   overflow: hidden;
   height: 400px;
   width: 400px;
-}
-
-.add-pet-form {
-  margin-bottom: 60px;
-  font-family: "Madimi One", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 15px;
-
 }
 
 .addpethead {
@@ -187,4 +215,21 @@ body {
   font-weight: 200;
   font-style: normal;
   font-size: 30px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
