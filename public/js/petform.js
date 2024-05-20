@@ -3,12 +3,12 @@ const addPetFormHandler = async (event) => {
   
     // Collect values from the new pet form
     const petName = document.querySelector('#pet-name').value.trim();
-    const petType = document.querySelector('.pet-type').value.trim();
+    const petType = document.querySelector('input[name="type"]:checked').value.trim();
     const petBreed = document.querySelector('#pet-breed').value.trim();
     const petBirthdate = document.querySelector('#pet-birthdate').value.trim();
     const petWeight = document.querySelector('#pet-weight').value.trim();
-    const petGender = document.querySelector('.pet-gender').value.trim();
-    const petAltered = document.querySelector('.pet-altered').value.trim();
+    const petGender = document.querySelector('input[name="gender"]:checked').value.trim();
+    const petAltered = document.querySelector('input[name="altered"]:checked').value.trim();
     const petMicrochip= document.querySelector('#pet-microchip').value.trim();
     const petVaccinations = document.querySelector('#pet-vaccinations').value.trim();
   
