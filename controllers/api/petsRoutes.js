@@ -19,7 +19,7 @@ router.post("/", withAuth, async (req, res) => {
       type: req.body.petType,
       breed: req.body.petBreed,
       birthdate: req.body.petBirthdate,
-      weight: req.body.petWeight,
+      weight: req.body.petWeight+'lbs',
       gender: req.body.petGender,
       altered: petAltered,
       microchip: req.body.petMicrochip,
