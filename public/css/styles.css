@@ -129,3 +129,10 @@ body {
 .footer {
   color: black;
 }
+
+.image-container {
+  object-fit: fill;
+  overflow: hidden;
+  height: 400px;
+  width: 400px;
+}
