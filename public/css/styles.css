@@ -7,21 +7,15 @@
     border-color: #EEEEEE;
     background-color: #0c99BA; 
 
-    
-
 }
 
 .header {
     height: 50px;
     text-align: center;
-background-color: #0c99BA;
+    background-color: #0c99BA;
     margin-left: auto;
- margin-right: auto;
+    margin-right: auto;
 }
-.background {
-    background-color: #EEEEEE; 
-}
-
 
 .card {
     flex: 1 0 100px;
@@ -61,14 +55,14 @@ text-align: center;
     border-width: 100px; 
 }
 body {
-    background-color: #f8f9fa; 
+    background-color: #70CFDB;
+    background-image: url('https://i.postimg.cc/FKTVmQRk/tppaw-1.png'); 
+    background-repeat: repeat; 
+    background-size: 200px 200px; 
+    color: black;
   }
   
-  .navbar {
-    background-color: #007bff; 
-  }
-  
-  .navbar .nav-link {
+  .nav-link {
     color: #ffffff; 
   }
   
@@ -94,6 +88,32 @@ body {
     background-color: #0056b3; 
     border-color: #004085;
   }
-  .container {
-    background-color: #eeeeee;
+  .form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #37312F;
+    border-radius: 15px;
+    background-color: #ECEEF0; 
+}
+.notification {
+    background-color: #37312F;
+    color: #37312F; 
+}
+.navbar, .footer {
+    background-color: #DCDFE2; 
+    color: #ECEEF0; 
   }
+  
+.button.is-custom {
+    background-color: #70CFDB;
+    border-color: #70CFDB;
+    color: #FFFFFF;
+}
+.button.is-custom:hover {
+    background-color: #5bb5c7;
+    border-color: #5bb5c7;
+}
+.footer {
+  color: black;
+}
