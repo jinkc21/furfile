@@ -53,6 +53,9 @@ Pet.init(
     allergies: {        
         type: DataTypes.STRING,
     },
+    images: {        
+      type: DataTypes.STRING,
+  },
   },
   {
     sequelize,

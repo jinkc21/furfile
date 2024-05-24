@@ -10,7 +10,8 @@
       "altered": true,
       "microchip": "0A127A0753",
       "vaccinations": "Rabies, Bordatella, Lepto, Parvo",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Bandit",
@@ -23,7 +24,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "All the important ones",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Ozzy",
@@ -36,7 +38,8 @@
       "altered": false,
       "microchip": "",
       "vaccinations": "All the important ones",
-      "allergies": "Being alone"
+      "allergies": "Being alone",
+      "images": ""
     },
     {
       "name": "Poseidon",
@@ -49,7 +52,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Snow",
@@ -62,7 +66,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
-      "allergies": "Chicken"
+      "allergies": "Chicken",
+      "images": ""
     },
     {
       "name": "Molly",
@@ -75,7 +80,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Birdie",
@@ -88,7 +94,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies, DA2PP, Bordatella, Lepto",
-      "allergies": "Dairy"
+      "allergies": "Dairy",
+      "images": ""
     },
     {
       "name": "Hugo",
@@ -101,7 +108,8 @@
       "altered": true,
       "microchip": "yes",
       "vaccinations": "All the needed ones",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Maya",
@@ -114,7 +122,8 @@
       "altered": true,
       "microchip": "yes",
       "vaccinations": "All the needed ones",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Kiki",
@@ -127,7 +136,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Ace",
@@ -140,7 +150,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     },
     {
       "name": "Zoey",
@@ -153,7 +164,8 @@
       "altered": true,
       "microchip": "",
       "vaccinations": "Rabies",
-      "allergies": ""
+      "allergies": "",
+      "images": ""
     }
 ]
   
