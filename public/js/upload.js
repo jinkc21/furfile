@@ -14,15 +14,15 @@ console.log("imgCdn: ", imgCdn)
   renderFiles(
     event.detail.allEntries.filter((file) => file.status === "success"));
   // send the IMG Data to our server
- const response = await fetch(`/api/pets/${petId}`, {
-    method: "PUT",
+ const response = await fetch(`/pets/${petId}`, {
+    method: "POST",
     body: JSON.stringify({imgCdn}),
     headers: { "Content-Type": "application/json" },
   });
 
   if (response.ok) {
     // If successful, redirect the browser to the profile page
-    document.location.replace(`/api/pets/${petId}`);
+    document.location.replace(`/pets/${petId}`);
   } else {
     alert(response.statusText);
   }

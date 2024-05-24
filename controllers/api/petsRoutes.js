@@ -43,7 +43,8 @@ router.put("/:id", withAuth, async (req, res) => {
   try {
     const newPet = await Pet.update({
       where: {
-        id: req.params.id
+        id: req.params.id,
+        image: req.body.imgCdn,
       },
     });
     console.log("Updated: ", newPet)
