@@ -27,6 +27,7 @@ router.post("/", withAuth, async (req, res) => {
       allergies: req.body.petAllergies,
       user_id: req.session.user_id,
       owner_id: req.session.user_id,
+      image: req.body.imgCdn,
     });
     console.log("New Pet Data: ", newPet);
     res.status(200).json(newPet);
@@ -37,12 +38,18 @@ router.post("/", withAuth, async (req, res) => {
 });
 
 router.put("/:id", withAuth, async (req, res) => {
+  console.log("Body Data: ", req.body)
+  console.log("Params Data: ", req.params)
+  const id = req.params.id;
+  const data = req.body;
   try {
-    const newPet = await Pet.update({});
-    res.status(200).json(newPet);
+    let petUpdate = await Pet.update({ images: req.body.imgCdn} , { where: { id: req.params.id } });
+    console.log("Updated: ", petUpdate)
+    res.status(200).json(petUpdate);
   } catch (err) {
-    req.status(400).json(err);
-  }
+    console.log("error: ", err);
+    res.status(400).json(err);
+  } 
 });
 
 router.delete("/:id", withAuth, async (req, res) => {

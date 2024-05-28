@@ -1,8 +1,28 @@
-<div class="center">
+{{!-- <div class="center">
     <input type="file" accept="image/*" name="image" id="file" onchange="loadFile(event)" style="display: none;">
     <label for="file" style="cursor: pointer;">Upload Pet Image</label>
     <img id="output" width="200" />
-</div>
+</div> --}}
+
+      <div class="img-preview-container center">
+            <lr-upload-ctx-provider
+                  ctx-name="my-uploader"
+                  id="my-uploader-provider"
+            ></lr-upload-ctx-provider>
+      </div>
+
+            <div class="center" id="previews">
+                  <img src="{{images}}">
+            </div>
+
+    <lr-config
+      ctx-name="my-uploader"
+      pubkey="dd949f4c896e86d27cb3"
+    ></lr-config>
+
+    <lr-file-uploader-regular
+      ctx-name="my-uploader"
+    ></lr-file-uploader-regular>
 
 
 <div class="card" id="pet-table-partial" type="text/x-handlebars-template">
@@ -56,3 +76,7 @@
     </tbody>
   </table>
 </div>
+
+
+
+<script src="/js/upload.js"></script>
