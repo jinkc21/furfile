@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Pet, User } = require('../models');
 const withAuth = require('../utils/auth');
+require('dotenv').config();
 
 router.get('/', (req, res) => {
   // If the user is already logged in, redirect the request to another route
@@ -55,7 +56,8 @@ router.get('/pets/:id', async (req, res) => {
 //  console.log('pet info:', pet)
     res.render('pet-profile', {
       ...pet,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      pubkey: process.env.pubkey
     });
   } catch (err) {
     res.status(500).json(err);
