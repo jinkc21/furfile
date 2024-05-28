@@ -21,11 +21,11 @@ uploadNode.addEventListener("file-upload-success", async (event) => {
   
   let petId = window.location.href.split("/").at(-1);
 
-  console.log("ID: ", petId);
-  console.log("Data: ", event.detail);
+  // console.log("ID: ", petId);
+  // console.log("Data: ", event.detail);
 
   let imgCdn = event.detail.cdnUrl;
-  console.log("imgCdn: ", imgCdn)
+  // console.log("imgCdn: ", imgCdn)
    //await renderFiles(
    // event.detail.allEntries.filter((file) => file.status === "success"));
    renderFiles(event.detail);
@@ -36,7 +36,7 @@ uploadNode.addEventListener("file-upload-success", async (event) => {
     body: JSON.stringify({imgCdn}),
     headers: { "Content-Type": "application/json" },
   });
-  console.log("Response: ", response);
+  // console.log("Response: ", response);
   if (response.ok) {
     // If successful, redirect the browser to the profile page
     document.location.replace(`/pets/${petId}`);

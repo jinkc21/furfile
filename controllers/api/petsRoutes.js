@@ -6,7 +6,7 @@ const withAuth = require("../../utils/auth");
 
 //If sign up new pets
 router.post("/", withAuth, async (req, res) => {
-  console.log("Incoming Pet Data: ", req.body);
+  // console.log("Incoming Pet Data: ", req.body);
   let petAltered = req.body.petAltered.toLowerCase();
   if (petAltered === "true") {
     petAltered = true;
@@ -29,25 +29,25 @@ router.post("/", withAuth, async (req, res) => {
       owner_id: req.session.user_id,
       image: req.body.imgCdn,
     });
-    console.log("New Pet Data: ", newPet);
+    // console.log("New Pet Data: ", newPet);
     res.status(200).json(newPet);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.status(400).json(err);
   }
 });
 
 router.put("/:id", withAuth, async (req, res) => {
-  console.log("Body Data: ", req.body)
-  console.log("Params Data: ", req.params)
+  // console.log("Body Data: ", req.body)
+  // console.log("Params Data: ", req.params)
   const id = req.params.id;
   const data = req.body;
   try {
     let petUpdate = await Pet.update({ images: req.body.imgCdn} , { where: { id: req.params.id } });
-    console.log("Updated: ", petUpdate)
+    // console.log("Updated: ", petUpdate)
     res.status(200).json(petUpdate);
   } catch (err) {
-    console.log("error: ", err);
+    // console.log("error: ", err);
     res.status(400).json(err);
   } 
 });
