@@ -12,6 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@uploadcare/rest-client": "^6.14.1",
+    "@uploadcare/signed-uploads": "^6.14.1",
     "@uploadcare/upload-client": "^6.14.1",
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",

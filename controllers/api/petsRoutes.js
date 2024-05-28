@@ -40,18 +40,15 @@ router.post("/", withAuth, async (req, res) => {
 router.put("/:id", withAuth, async (req, res) => {
   console.log("Body Data: ", req.body)
   console.log("Params Data: ", req.params)
+  const id = req.params.id;
+  const data = req.body;
   try {
-    const newPet = await Pet.update({
-      where: {
-        id: req.params.id,
-        image: req.body.imgCdn,
-      },
-    });
-    console.log("Updated: ", newPet)
-    res.status(200).json(newPet);
+    let petUpdate = await Pet.update({ images: req.body.imgCdn} , { where: { id: req.params.id } });
+    console.log("Updated: ", petUpdate)
+    res.status(200).json(petUpdate);
   } catch (err) {
     console.log("error: ", err);
-    req.status(400).json(err);
+    res.status(400).json(err);
   } 
 });
 
